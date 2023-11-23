@@ -14,7 +14,7 @@ def my_fun():
     #return render_template('home.html')
     return "Medical insurance program"
 
-@app.route("/predict_charges")
+@app.route('/predict_charges',methods= ["post"])
 
 def get_insurance_charges():
     data = request.form
